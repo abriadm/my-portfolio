@@ -1,0 +1,77 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+section.project {
+    margin: 0;
+    gap: 0;
+    width: 100%;
+    padding: 2% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;   
+}
+
+.header-project {
+    align-items: center;
+    margin: 1.5rem 0 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.4rem;
+    color: #402B3A;
+}
+
+.container-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-project a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px grey;
+}
+
+.container-project .card-project img {
+    width: 280px;
+}
+
+.container-project .card-project h3 {
+    margin: 1rem 0;
+    color: #191919;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 450px) {
+    section.project {
+        padding: 1rem 25px;
+    }
+
+    .container-project {
+        gap: 3rem;
+    }
+
+    .container-project .card-project img {
+        width: 300px;
+    }
+
+    .header-project {
+        font-size: 2.5rem;
+        align-self: center;
+    }
+}

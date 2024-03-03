@@ -1,0 +1,358 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#side-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 35px;
+    z-index: 0;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+#side-menu:hover {
+    opacity: 0.7;
+}
+
+.background-side {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 0.5s ease-out;
+    opacity: 0;
+}
+
+.background-side.active {
+    display: block;
+    opacity: 0.3;
+}
+
+.sidebar {
+    background-color: #FFF7F1;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    padding: 17px 25px 0 40px;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    transition: all 0.4s ease-out;
+}
+
+.sidebar.active {
+    right: 0;
+    /* overflow-y: hidden; */
+}
+
+#close-btn {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 40px;
+    transition: all 0.3s ease-out;
+    opacity: 0.5;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+}
+
+#close-btn:hover {
+    opacity: 1;
+    background-color: #e9dcd9;
+}
+
+.sidebar .side-icon {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar .side-icon img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.sidebar .side-icon h1 {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sidebar .side-icon h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar .main-side {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar .main-side a {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    color: #76453B;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    opacity: 0.8;
+}
+
+.sidebar .main-side a:hover {
+    opacity: 1;
+}
+
+hr {
+    opacity: 0.5;
+    width: 65%;
+    margin-top: 1.5rem;
+    border: 1px solid black;
+}
+
+.sidebar .social-side {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: auto;
+}
+
+.sidebar .social-side a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    transition: all 0.2s ease-in;
+    opacity: 0.8;
+    color: #0e032e;
+}
+
+.sidebar .social-side a:hover {
+    opacity: 1;
+}
+
+.sidebar .social-side a span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #311d19;
+}
+
+/* HomePage Section */
+
+section {
+    padding-top: 4rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 50rem;
+    /* overflow-y: auto; */
+    justify-content: space-between;
+}
+
+.header {
+    color: #7A3E3E;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    margin: 2rem 0;
+}
+
+.intro img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.intro .intro-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #482121;
+    transition: all 0.3s ease-out;
+}
+
+.intro .intro-text i {
+    color: #0e032e;
+}
+
+.intro .intro-text a {
+    cursor: pointer;
+    color: #3a358a;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+.intro .intro-text a:hover {
+    color: #5a568a;
+}
+
+.container {
+    margin: 2.5rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container .item-list {
+    list-style: none;
+    display: flex;
+    width: 23rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .item-list img {
+    transition: all 0.3s ease-out;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.container .item-list h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    align-self: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 376px) {
+    .container .item-list {
+        padding: 0 1rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .item-list h5 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #close-btn {
+        margin-right: 10px;
+    }
+
+    #side-menu {
+        top: 1.6rem;
+        right: 2rem;
+        font-size: 2rem;
+    }
+
+    .sidebar {
+        width:17rem;
+        padding: 10px 5px 0 25px;
+    }
+
+    .sidebar .side-icon img {
+        width: 2.5rem;
+    }
+
+    .sidebar .side-icon .side-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .sidebar .side-icon .side-content h4 {
+        font-size: 14px;
+    }
+
+    .sidebar .main-side {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar .social-side {
+        gap: 1.5rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 2rem;
+        margin-left: 2rem;
+        transition: all 0.3s ease-out;
+    }
+
+    .intro {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .intro img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+        border-radius: 50%;
+        box-shadow: 1px 1px 20px #0e032e;
+    }
+
+    .intro .intro-text {
+        padding: 0.5rem 2rem;
+        gap: 1.6rem;
+    }
+
+    .intro .intro-text p {
+        transition: all 0.3s ease-out;
+        font-family: "Segoe UI", Tahoma;
+    }
+
+    .container {
+        margin: 1.5rem auto;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .item-list img {
+        transition: all 0.3s ease-out;
+        width: 5.5rem;
+    }
+
+    footer {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 12px;
+    }
+}
