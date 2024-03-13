@@ -1,6 +1,7 @@
 import "./component.css";
 import { activity } from "./data";
 import me from "../assets/me.jpg";
+import cv from "../assets/CV.pdf";
 
 const HomePage = () => {
   const listItem = activity.map((item) => (
@@ -22,7 +23,10 @@ const HomePage = () => {
             <br />
             <i>Entry level Web Developer</i> &#128513;&#128536;
           </p>
-          <a href="mailto:giveonaldo@gmail.com">Contact me!!</a>
+          <div className="contact-me">
+          <a className="email" href="mailto:giveonaldo@gmail.com">Contact me!!</a>
+          <a className="cv" href={cv} target="_blank" rel="noopener noreferrer">my CV</a>
+          </div>
         </div>
       </div>
       <h1 className="header">Activity</h1>

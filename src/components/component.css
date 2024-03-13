@@ -195,17 +195,6 @@ section {
     color: #0e032e;
 }
 
-.intro .intro-text a {
-    cursor: pointer;
-    color: #3a358a;
-    font-weight: bold;
-    transition: all 0.3s ease-in;
-}
-
-.intro .intro-text a:hover {
-    color: #5a568a;
-}
-
 .container {
     margin: 2.5rem auto 0;
     display: flex;
@@ -244,6 +233,37 @@ footer {
     align-self: center;
 }
 
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+.contact-me .email {
+    font-weight: 300;
+    transition: all 0.3s ease-out;
+}
+
+.contact-me .email:hover {
+    font-weight: 600;
+}
+
+.contact-me .cv {
+    padding: 5px 15px;
+    background-image: linear-gradient(45deg, #430A5D, #5F374B, #EEE4B1,#FFC700,#4CCD99,#5356FF,#B0C5A4,#114232,#FFE6E6,#F1EF99);
+    color: wheat;
+    text-shadow: 1px 1px 5px yellowgreen;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    font-weight: 900;
+}
+
+.contact-me .cv:hover {
+    box-shadow: 1px 1px 15px yellow;
+    text-shadow: 1px 1px 3px white;
+    color: black;
+}
+
 /* Responsive */
 @media only screen and (max-width: 376px) {
     .container .item-list {
@@ -259,6 +279,10 @@ footer {
 
     .container .item-list h5 {
         font-size: 1rem;
+    }
+
+    .contact-me {
+        padding-right: 1rem;
     }
 }
 
@@ -305,9 +329,7 @@ footer {
     }
 
     .header {
-        font-size: 2rem;
-        margin-left: 2rem;
-        transition: all 0.3s ease-out;
+        display: none;
     }
 
     .intro {

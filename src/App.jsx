@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/education" element={<Education/>}/>
+        <Route path="/certification" element={<Education/>}/>
         <Route path="/project" element={<Project/>}/>
         <Route path="*" element={<HomePage/>}/>
       </Routes>

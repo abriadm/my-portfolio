@@ -59,7 +59,7 @@ const Sidebar = () => {
         </Link>
         <div className="main-side">
           <Link to="/project">Project</Link>
-          <Link to="/education">Education</Link>
+          <Link to="/certification">Certificate</Link>
         </div>
         <hr />
         <div className="social-side">
